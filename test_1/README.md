@@ -2,7 +2,7 @@
 
 ```mermaid
 graph TD
-  App["App (books, searchTerm)"]
+  App["App: books, searchTerm"]
   AddressForm["AddressForm"]
   AddressTable["AddressTable"]
 
@@ -12,7 +12,7 @@ graph TD
   AddressForm -->|addBook| App
   AddressTable -->|updateBook| App
 
-  App -->|books (filtered), updateBook| AddressTable
+  App -->|books filtered + updateBook| AddressTable
   App -->|addBook| AddressForm
 
 ```
